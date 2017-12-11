@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>PreCog Task B</title>
 </head>
 <body>
-	<img src="{{image.face_img.url}}">
+	<table>
+		<tr>
+			<td>Face Present: </td>
+			<td>{{ image.has_face }}</td>
+		</tr>
+		<tr>
+			<td>Narendra Modi:</td>
+			<td>{{ image.has_modi }}</td>
+		</tr>
+		<tr>
+			<td>Arvind Kejriwal: </td>
+			<td>{{ image.has_kejr }}</td>
+		</tr>
+	</table>
 
 	<br>
-
-	Face Present: {{ image.has_face }} <br>
-	Narendra Modi: {{ image.has_modi }} <br>
-	Arvind Kejriwal: {{ image.has_kejr }} <br>
+	<img src="{{image.face_img.url}}">
 </body>
 </html>
